@@ -3,37 +3,32 @@ from random import randint
 
 def attack(char_name, char_class):
     if char_class == 'warrior':
-        return (
-            f'{char_name} '
-            f'нанёс урон противнику '
-            f'равный {5 + randint(3, 5)}')
+        return (f'{char_name} '
+                f'нанёс урон противнику '
+                f'равный {5 + randint(3, 5)}')
     if char_class == 'mage':
-        return (
-            f'{char_name} '
-            f'нанёс урон противнику'
-            f'равный {5 + randint(5, 10)}')
+        return (f'{char_name} '
+                f'нанёс урон противнику'
+                f'равный {5 + randint(5, 10)}')
     if char_class == 'healer':
-        return (
-            f'{char_name} '
-            f'нанёс урон противнику '
-            f'равный {5 + randint(-3, -1)}')
+        return (f'{char_name} '
+                f'нанёс урон противнику '
+                f'равный {5 + randint(-3, -1)}')
     return (f'{char_name} не нанес урона')
 
 
 def defence(char_name, char_class):
     if char_class == 'warrior':
-        return (
-            f'{char_name} '
-            f'блокировал {10 + randint(5, 10)} урона')
+        return (f'{char_name} '
+                f'блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
-        return (
-            f'{char_name} '
-            f'блокировал {10 + randint(-2, 2)} урона')
+        return (f'{char_name} '
+                f'блокировал {10 + randint(-2, 2)} урона')
     if char_class == 'healer':
         return (
             f'{char_name} '
             f'блокировал {10 + randint(2, 5)} урона')
-    return (f'{char_name} нияего не блокировал')
+    return (f'{char_name} ничего не блокировал')
 
 
 def special(char_name, char_class):
@@ -54,9 +49,8 @@ def special(char_name, char_class):
 
 def start_training(char_name, char_class):
     if char_class == 'warrior':
-        print(
-            f'{char_name}, ты Воитель '
-            f'— отличный боец ближнего боя.')
+        print(f'{char_name}, ты Воитель '
+              f'— отличный боец ближнего боя.')
     if char_class == 'mage':
         print(
             f'{char_name}, ты Маг '
